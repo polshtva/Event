@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на мероприятие</title>
+</head>
+<body>
+    <a href="index.html">&#128652;</a>
+
+    <h1>Регистрация на мероприятие</h1>
+    
+    <form action="">
+        <label>Имя <input type="text" name="name" required></label><br><br>
+        
+        <label>Фамилия <input type="text" name="surname" required placeholder="Введите фамилия"></label>
+        <br><br>
+        
+        <label>Электронная почта <input type="email" name="email"></label><br><br>
+        
+        <label>Номер телефона <input type="tel" name="tel"></label><br><br>
+        
+        <label>Пароль <input type="password" name="password" required></label><br><br>
+        
+        <label>Дата меропиятий <input type="date" name="date"></label><br><br>
+        
+        <label>Количество гостей <input type="number" name="quentity_g" min="1" max="10"></label><br><br>
+        
+        <label>Тип мероприятия:
+            <select name="event">  
+                <option value="conference">Конференция</option>
+                <option value="master-class">Мастер-класс</option>
+                <option value="webinar">Вебинар</option>
+            </select>
+        </label> <br><br>
+
+        Время мероприятия:
+        <label>
+            <input type="radio" name="time" value="morning">Утро 
+        </label>
+        <label>
+            <input type="radio" name="time" value="afternoon">День 
+        </label>
+        <label>
+            <input type="radio" name="time" value="evening">Вечер 
+        </label>
+        <br><br>
+
+        <label>Получать новости по электронной почте
+            <input type="checkbox" name="news" value="true">
+        </label>
+        <br><br>
+
+        <label>
+            Комментарии:
+            <textarea name="comment"></textarea>
+        </label>
+        <br><br>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+
+    </form>
+
+</body>
+</html>
